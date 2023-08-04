@@ -1,6 +1,0 @@
-h2.center IssueBook
-form(action=`/books/${book_id}/return` method="POST")
-    p quantity of books to be returned #{noofbooks_toreturn}
-    label(for="Noreturn") Enter the quantity of book to return:
-    input#Noreturn(name="Noreturn" type="number" value=0 max=noofbooks_toreturn)
-    button(type="submit") return
