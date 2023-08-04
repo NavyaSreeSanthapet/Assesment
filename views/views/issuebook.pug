@@ -1,0 +1,6 @@
+h2.center IssueBook
+form(action=`/books/${book.id}/issue` method="POST")
+    p Available quantity of book is #{book.quantity}
+    label(for="Noissue") Enter the quantity of book to issue:
+    input#Noissue(name="Noissue" type="Noissue" value=0 max=book.quantity)
+    button(type="submit") Issue

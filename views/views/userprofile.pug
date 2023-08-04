@@ -1,0 +1,25 @@
+h2.center UserProfile
+
+table.table
+    thead
+        tr
+            th id
+            th username
+            th email
+            th password
+    tbody
+
+        tr
+                td(style="padding-right: 20px;")=user.id
+
+                td(style="padding-right: 20px;")=user.username
+
+                td(style="padding-right: 20px;")=user.email
+
+                td=user.password
+
+a(href=`/user/${user.id}/edit`) Edit
+
+p click  #[a(href="/") here] to go back to Homepage!
+
+

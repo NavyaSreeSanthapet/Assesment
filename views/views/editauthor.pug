@@ -1,0 +1,7 @@
+h2.center Edit Book Details
+form(action=`/authors/${author.id}/?_method=PUT` method="POST")
+
+    label(for="authorname") Authorname:
+    input#authorname(name="authorname" type="text" value=author.authorname)
+
+    input(type="submit" value="Update")

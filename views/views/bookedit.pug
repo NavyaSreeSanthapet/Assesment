@@ -1,0 +1,21 @@
+h2.center Edit Book Details
+form(action=`/books/${book.id}/?_method=PUT` method="POST")
+    label(for="title") Title:
+    input#title(name="title" type="text" value=book.title)
+
+    label(for="author_id") Author ID:
+    input#author_id(name="author_id" type="text" value=book.author_id)
+
+    label(for="authorname") Authorname:
+    input#authorname(name="authorname" type="text" value=book.authorname)
+
+    label(for="genre") Genre:
+    input#genre(name="genre" type="text" value=book.genre)
+
+    label(for="description") Description:
+    textarea#description(name="description" rows="5" cols="50")= book.description
+
+    label(for="ratings") Ratings:
+    input#ratings(name="ratings" type="number" step="0.1" value=book.ratings)
+
+    input(type="submit" value="Update")

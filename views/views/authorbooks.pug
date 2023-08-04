@@ -1,0 +1,17 @@
+h2.center Books by #{authorname}
+
+
+    table
+        thead
+            tr
+                th Title
+                th Genre
+                th Description
+                th Ratings
+        tbody
+            each book in books
+                tr
+                    td(style="padding-right: 20px;")= book.title
+                    td(style="padding-right: 20px;")= book.genre
+                    td(style="padding-right: 20px;")= book.description
+                    td(style="padding-right: 20px;")= book.ratings

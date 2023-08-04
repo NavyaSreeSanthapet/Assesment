@@ -1,0 +1,7 @@
+block content
+    h1 Add New Author
+    form(action="/author" method="POST")
+        label(for="authorname") Authorname:
+            input(type="text", id="authorname", name="authorname", required)
+            br
+            button(type="submit") Add Author
