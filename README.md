@@ -36,5 +36,5 @@ CREATE TABLE books (
   description TEXT,
   ratings NUMERIC(3, 1),
   author_id INTEGER,
-  quantity INTEGER
+  quantity INTEGER SET DEFAULT 5
 );
