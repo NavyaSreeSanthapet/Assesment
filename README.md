@@ -38,3 +38,5 @@ CREATE TABLE books (
   author_id INTEGER,
   quantity INTEGER SET DEFAULT 5
 );
+
+Note: Before adding new book , need to create new author and use that generated new authorid and authorname while creating new book.
