@@ -1,0 +1,17 @@
+html
+    head
+        title Signup
+    body
+        if message
+            h4 #{message}
+        form(action="/signup" method="POST")
+            p username:
+                input(name="username" type="text" required)
+            p email:
+                input(name="email" type="email" required)
+            p password:
+                input(name="password" type="password" required)
+            p role    :
+                input(name="role" type="text" required)
+            button(type="submit") Signup
+            p To go back to home page! click  #[a(href="/") here]

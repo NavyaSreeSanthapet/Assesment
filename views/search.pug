@@ -1,0 +1,11 @@
+doctype html
+html
+body
+    h1 Search Books
+    form(action="/search1" method="GET")
+        input(type="text", name="query", placeholder="Enter your search query...")
+        button(type="submit") Search
+
+    block content
+
+    p To go back to home page! click  #[a(href="/") here]

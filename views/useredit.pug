@@ -1,0 +1,12 @@
+h2.center Edit User profile Details
+form(action=`/user/${user.id}/?_method=PUT` method="POST")
+    label(for="username") Username:
+    input#username(name="username" type="text" value=user.username)
+
+    label(for="email") Email ID:
+    input#email(name="email" type="text" value=user.email)
+
+    label(for="password") Password:
+    input#password(name="password" type="text" value=user.password)
+
+    input(type="submit" value="Update")
